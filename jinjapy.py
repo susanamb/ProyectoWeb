@@ -6,7 +6,7 @@ def app(environ, start_response):
     #load folder
   env = Environment(loader=FileSystemLoader("templates"))
 
-  template = env.get_template('template.html')
+  template = env.get_template('index.html')
   
   #generate data
   data = {
